@@ -1,0 +1,553 @@
+.prescription-view {
+  max-width: 800px;
+  margin: 70px auto;
+  padding: 25px;
+  border: 0px solid #e9dede;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.prescription-view::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: transparent;
+  filter: drop-shadow(0px 8px 8px #e7e1e1);
+}
+
+.prescription-structure-child {
+  height: 100px;
+  width: 595px;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  background-color: #9aa0b9;
+  display: none;
+  max-width: 100%;
+}
+.medical-symbol-1-icon {
+  height: 71px;
+  width: 61px;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+.dr-name-surname {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 1;
+}
+.qualification {
+  display: inline-block;
+  min-width: 97px;
+}
+.address-contact,
+.qualification {
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+}
+.dr-name-surname-parent,
+.prescription-structure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5px;
+}
+.prescription-structure {
+  align-self: stretch;
+  border-radius: 10px 10px 0 0;
+  background-color: #9aa0b9;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 26px 29px 22px 32px;
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: 20px;
+}
+.prescription-content-child {
+  height: 119px;
+  width: 595px;
+  position: relative;
+  background-color: #f0f0f0;
+  display: none;
+  max-width: 100%;
+}
+.p-id {
+  min-width: 41px;
+}
+.age,
+.name,
+.p-id {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+.name {
+  align-self: stretch;
+  min-width: 51px;
+}
+.age {
+  min-width: 36px;
+}
+.p-id-parent {
+  width: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.raj,
+.raj-sharma,
+.y {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 76px;
+  z-index: 2;
+}
+.raj-sharma,
+.y {
+  min-width: 81px;
+}
+.y {
+  min-width: 33px;
+}
+.frame-parent,
+.raj-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.raj-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 15.5px;
+  color: #343232;
+}
+.frame-parent {
+  width: 151px;
+  flex-direction: row;
+  gap: 19px;
+}
+.date,
+.time {
+  position: relative;
+  display: inline-block;
+  min-width: 43px;
+  z-index: 2;
+}
+.time {
+  min-width: 44px;
+}
+.date-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.button,
+.div {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  z-index: 2;
+}
+.button {
+  align-self: stretch;
+  min-width: 87px;
+}
+.div {
+  min-width: 41px;
+}
+.button-parent,
+.frame-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  color: #343232;
+}
+.frame-group {
+  width: 153px;
+  flex-direction: row;
+  gap: 22px;
+}
+.prescription-content,
+.prescription-structure-parent {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.prescription-content {
+  background-color: #f0f0f0;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 28px;
+  box-sizing: border-box;
+  gap: 20px;
+  z-index: 1;
+  margin-top: -4px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  font-family: Lato;
+}
+.prescription-structure-parent {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 15px;
+  color: #fff;
+  font-family: Poppins;
+}
+.diagnosis,
+.symptoms {
+  position: relative;
+  display: inline-block;
+  min-width: 95px;
+}
+.diagnosis {
+  min-width: 87px;
+}
+.symptoms-details,
+.symptoms-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.symptoms-header {
+  justify-content: flex-start;
+  gap: 36px;
+}
+.symptoms-details {
+  justify-content: flex-end;
+  padding: 0 0 1px;
+}
+.fatty-lever,
+.pain-in-abdomen {
+  position: relative;
+  font-weight: 500;
+}
+.fatty-lever {
+  display: inline-block;
+  min-width: 92px;
+}
+.medical-condition,
+.symptoms-content {
+  display: flex;
+  justify-content: flex-start;
+}
+.medical-condition {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 39px;
+  font-size: 18px;
+  color: #343232;
+}
+.symptoms-content {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
+}
+.symptoms-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 1px;
+  box-sizing: border-box;
+  min-width: 159px;
+}
+.bp,
+.weight {
+  position: relative;
+  display: inline-block;
+  min-width: 26px;
+}
+.weight {
+  min-width: 67px;
+}
+.vitals-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 36px;
+}
+.div1,
+.remember-me {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.div1 {
+  align-self: stretch;
+  min-width: 61px;
+}
+.remember-me {
+  min-width: 21px;
+}
+.parent {
+  width: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 38px;
+  font-size: 18px;
+  color: #343232;
+}
+.frame-container,
+.vitals-header-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.vitals-header-parent {
+  width: 168px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.frame-container {
+  align-self: stretch;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 58px;
+}
+.medicine-01,
+.medicine-02,
+.rx {
+  position: relative;
+  display: inline-block;
+  min-width: 27px;
+}
+.medicine-01,
+.medicine-02 {
+  font-weight: 500;
+  min-width: 100px;
+}
+.medicine-01-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.before-meal,
+.twice-daily {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 93px;
+}
+.before-meal {
+  min-width: 99px;
+}
+.frame-div,
+.twice-daily-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.frame-div {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.before-meal1,
+.medicine-03 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 100px;
+}
+.before-meal1 {
+  min-width: 99px;
+}
+.additional-medication {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.medication-structure {
+  flex: 1;
+  flex-direction: column;
+  gap: 11px;
+}
+.medication-structure,
+.medication-structure-wrapper,
+.rx-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.medication-structure-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 4px;
+  font-size: 18px;
+  color: #343232;
+}
+.rx-parent {
+  width: 255px;
+  flex-direction: column;
+  padding: 0 0 27px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+.tests-to-do {
+  position: relative;
+  display: inline-block;
+  min-width: 102px;
+}
+.test-01,
+.test-04 {
+  position: relative;
+  font-weight: 500;
+}
+.test-01 {
+  align-self: stretch;
+  white-space: nowrap;
+}
+.test-04 {
+  display: inline-block;
+  min-width: 58px;
+}
+.test-04-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 1px;
+}
+.test-structure {
+  flex: 1;
+  flex-direction: column;
+  gap: 13px;
+}
+.test-structure,
+.test-structure-wrapper,
+.tests-to-do-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.test-structure-wrapper {
+  width: 67px;
+  flex-direction: row;
+  padding: 0 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #343232;
+}
+.tests-to-do-parent {
+  flex-direction: column;
+  padding: 0 0 6px;
+  gap: 16px;
+}
+.note {
+  position: relative;
+  display: inline-block;
+  min-width: 45px;
+}
+.do-not-take {
+  flex: 1;
+  position: relative;
+  font-weight: 500;
+}
+.do-not-take-alcohol-visit-aft-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 4px;
+  text-align: left;
+  font-size: 18px;
+  color: #656565;
+}
+.note-parent {
+  width: 262px;
+  flex-direction: column;
+  gap: 11px;
+}
+.diagnosis-details,
+.diagnosis-structure,
+.note-parent,
+.prescription-view {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.diagnosis-structure {
+  flex: 1;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 100%;
+}
+.diagnosis-details,
+.prescription-view {
+  box-sizing: border-box;
+}
+.diagnosis-details {
+  width: 526px;
+  flex-direction: row;
+  padding: 0 28px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  font-family: Lato;
+}
+.prescription-view {
+  width: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 40px;
+  gap: 21px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 450px) {
+  .prescription-content,
+  .prescription-structure {
+    flex-wrap: wrap;
+  }
+  .bp,
+  .diagnosis,
+  .symptoms,
+  .weight {
+    font-size: 16px;
+  }
+  .frame-container {
+    gap: 29px;
+  }
+  .note,
+  .rx,
+  .tests-to-do {
+    font-size: 16px;
+  }
+}
